@@ -1,18 +1,22 @@
-## Getting Started
+## Description
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+PClock is a Pomodoro clock written in Java that you can configure session durations, break durations and amount of sessions. It consumes about 66MB of RAM (Fedora 36), runs on `bash` and adjusts itself depending on the terminal window size.
 
 ## Folder Structure
 
-The workspace contains two folders by default, where:
+The project contains two folders, where:
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+- `src`: the folder to maintain source code
+- `bin`: the folder to maintain compiled code (`.class`)
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+## Usage
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+In the directory of the project (inside `src`), use:
 
-## Dependency Management
+``java PClock (sessionDuration) (breakDuration) (numberOfSessions)``
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## Dependencies
+
+> Figlet 2.2.5
+
+> OpenJDK 17.0.4.1 and above
