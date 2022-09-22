@@ -15,8 +15,10 @@ In the directory of the project (inside `src`), use:
 
 ``java PClock (sessionDuration) (breakDuration) (numberOfSessions)``
 
+> You can also change the alarm sound in the Alarm.java file, feel free to change anything you want.
+
 ## Dependencies
 
 > Figlet 2.2.5
 
-> OpenJDK 17.0.4.1 and aboveis written in Java
+> OpenJDK 17.0.4.1 and above
