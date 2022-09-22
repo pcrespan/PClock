@@ -21,6 +21,13 @@ public class Alarm extends JFrame {
             // Defining AudioInputStream, which will be the file on the URL
             AudioInputStream audioInpStream = AudioSystem.getAudioInputStream(url);
 
+            // Storing audio format
+            AudioFormat audioFileFormat = audioInpStream.getFormat();
+
+            // Calculating duration of audio file
+            String audioDuration = String.valueOf(Math.round((audioInpStream.getFrameLength() / audioFileFormat.getFrameRate()) * Math.pow(10, 3)));
+            int audioDurationSec = Integer.parseInt(audioDuration);
+
             // Creating clip object to play 
             Clip clip = AudioSystem.getClip();
 
@@ -29,7 +36,7 @@ public class Alarm extends JFrame {
             clip.start();
 
             // Sleeping the amount of time needed for the alarm to finish
-            Thread.sleep(12000);
+            Thread.sleep(audioDurationSec);
         } catch (LineUnavailableException e) {
             e.printStackTrace();
         } catch (UnsupportedAudioFileException e) {

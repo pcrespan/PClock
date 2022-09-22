@@ -17,8 +17,6 @@ In the directory of the project (inside `src`), use:
 
 > You can also change the alarm sound in the Alarm.java file, feel free to change anything you want.
 
-test
-
 ## Dependencies
 
 > Figlet 2.2.5
