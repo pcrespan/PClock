@@ -13,8 +13,7 @@ Compile all the `.java` files:
 ```
 javac (directory)/(file).java
 ```
-
-or
+to compile one at a time or
 
 ```
 javac (directory)/*.java
