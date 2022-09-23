@@ -35,8 +35,8 @@ java PClock (sessionDuration) (breakDuration) (numberOfSessions)
 
 >- bash
 
->- OpenJDK 17 JRE
+>- OpenJDK 17 JRE (not headless)
 
->- OpenJDK 17 JDK
+>- OpenJDK 17 JDK (not headless)
 
 
