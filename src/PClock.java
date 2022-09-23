@@ -32,6 +32,11 @@ public class PClock {
         breakDuration = intList.get(1);
         sessionAmount = intList.get(2);
 
+        // Testing if maximum duration was not exceeded
+        if (sessionDuration > 60 || breakDuration > 60) {
+            System.out.println("Maximum of 60 minutes per session and break");
+            System.exit(1);
+        }
         // Running timers
         try {
             for (int i = 1; i <= sessionAmount; i++) {

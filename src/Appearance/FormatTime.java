@@ -8,9 +8,11 @@ public class FormatTime {
         String stringMinutes = Integer.toString(minutes);
         String stringSeconds = Integer.toString(seconds);
 
-        // Formatting minutes and seconds on the format "mm:ss"
+        // Formatting minutes and seconds on the format "mm:ss" or "hh:mm:ss"
         if (minutes < 10) {
             stringMinutes = "0" + minutes;
+        } else if (minutes == 60) {
+            stringMinutes = "01" + " " + ":" + " " + "00";
         }
 
         if (seconds < 10 || seconds == 0) {

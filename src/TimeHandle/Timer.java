@@ -12,21 +12,23 @@ public class Timer {
        
         minutes = sessionDuration;
         int seconds = 59;
-        int firstMinute = sessionDuration;
+        boolean firstMinute = true;
 
         // Minutes
         for (int i = minutes; i >= 0; i--) {
 
+            // Seconds
             for (int j = seconds; j >= 0; j--) {
                 ClearTerminalScreen.clear();
                 PrintCenter.printStatusCenter(status);
 
-                if (firstMinute == sessionDuration) {
+                // First minute
+                if (firstMinute) {
                     j = 0;
                     FormatTime.printFormattedTime(i, j);
                     Thread.sleep(1000);
                     j = 60;
-                    firstMinute--;
+                    firstMinute = false;
                     i--;
                 } else {
                     FormatTime.printFormattedTime(i, j);
