@@ -6,7 +6,7 @@ PClock is a Pomodoro clock written in Java that you can configure session durati
 
 The clock accepts a maximum of 1 hour per session and/or break. The reason for that is that I made the clock for myself, and my study sessions do not go beyond that duration, so adding an hour loop on a code made to accept a maximum of 1 hour would make the code less clean. Feel free to change as many things as you want and give suggestions to make it better.
 
-## Pre-usage
+## Pre usage
 
 Download the code:
 
