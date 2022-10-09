@@ -36,7 +36,7 @@ public class PClock {
         if (sessionDuration > 60 || breakDuration > 60) {
             System.out.println("Maximum of 60 minutes per session and break");
             System.exit(1);
-        } elseif (sessionDuration <= 0 || breakDuration <= 0) {
+        } else if (sessionDuration <= 0 || breakDuration <= 0) {
             System.out.println("Invalid session or break duration");
             System.exit(1);
         }
