@@ -8,12 +8,6 @@ The clock accepts a maximum of 1 hour per session and/or break. The reason for t
 
 ## Pre-usage
 
-Download the code:
-
-```
-$ git clone git@github.com:pcrespan/PClock.git
-```
-
 Compile all the `.java` files:
 
 ```
